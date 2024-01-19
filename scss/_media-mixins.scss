@@ -1,0 +1,37 @@
+@import '/public/scss/_variables.scss';
+
+@mixin xl {
+	@media (max-width: $screen-xl - 0.2) {
+		@content;
+	}
+}
+
+@mixin xl-min {
+	@media (min-width: $screen-xl - 0.2) {
+		@content;
+	}
+}
+
+@mixin hamburger {
+	@media (max-width: $hamburger-visible - 0.2) {
+		@content;
+	}
+}
+
+@mixin hamburger-min {
+	@media (min-width: $hamburger-visible - 0.2) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: $screen-tablet - 0.2) {
+		@content;
+	}
+}
+
+@mixin tablet-min {
+	@media (min-width: $screen-tablet - 0.2) {
+		@content;
+	}
+}
